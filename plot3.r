@@ -19,11 +19,9 @@ lines(powerDataSubset$DateTime,powerDataSubset$Sub_metering_3, type = "l",
 legend("topright",c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), 
        col = c(1:3), pch = -1, lty = 1,cex = 0.75)
 
-# dev.copy(png, width = 480, height = 480, file = "plot3.1.png")
-
 
 #plotting directly to file, better representation than copy
-png(width = 480, height = 480, file = "plot3.1.png")
+png(width = 480, height = 480, file = "plot3.png")
   plot(powerDataSubset$DateTime,powerDataSubset$Sub_metering_1, type = "l",
        ylab = "Energy sub metering", xlab = "", col=1)
 
